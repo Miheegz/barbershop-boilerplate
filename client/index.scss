@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+
+  label {
+    display: block;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 1em;
+  }
+
+  form div {
+    margin: 1em;
+    display: inline-block;
+  }
+
+.login-form > body > div,
+.login-form > body > div > div,
+.login-form > body > div > div > div.login-form {
+  height: 100%;
+}
+.login-form,
+.backgroundcolor {
+  background-color: #1b1c1d
+}
+}
