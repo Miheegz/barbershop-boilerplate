@@ -15,7 +15,7 @@ const Main = (props) => {
   const {children, handleClick, isLoggedIn} = props
 
   return (
-    <div style={{  backgroundColor: 'gray' }}>
+    <div style={{  backgroundColor: 'gray', height: '150vh' }}>
       <Navbar />
 
       <hr />

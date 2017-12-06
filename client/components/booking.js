@@ -2,7 +2,7 @@ import React from 'react'
 
 // import { createNewEvent, createSpotifyPlaylist } from '../store'
 
-import { Button, Dropdown, Form, Rating, Segment, Header, Message, Statistic } from 'semantic-ui-react'
+import { Button, Dropdown, Form, Rating, Segment, Header, Message, Grid } from 'semantic-ui-react'
 
 
 
@@ -13,12 +13,18 @@ import { Button, Dropdown, Form, Rating, Segment, Header, Message, Statistic } f
 
     return (
 
-      <div style={{ marginLeft: '9em', marginRight: '9em', background: '#2184d0' }}>
-        <Segment raised padded inverted style={{ paddingLeft: '6em', paddingRight: '6em', height: 'auto', marginTop: '.85em' }}>
+      <div style={{ marginLeft: '9em', marginRight: '9em', height: 'max-content' }}>
+      <Grid
+      textAlign="center"
+      style={{ height: '450px' }}
+      verticalAlign="middle"
+    >
+        <Segment raised padded inverted style={{ paddingLeft: '6em', paddingRight: '6em', height: 'max-content', marginTop: '.85em' }}>
           <Header textAlign="center" as="h1" size= "huge" >Book an Appointment</Header>
 
           <iframe src="https://www.sagenda.net/Frontend/5a26fe182799518d0c703f46?retrieveFromCookies=False" width="1050" height="1200" frameborder="0" allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-top-navigation allow-scripts allow-forms">Book here</iframe>
         </Segment>
+        </Grid>
       </div>
     )
 

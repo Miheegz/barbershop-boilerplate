@@ -25,6 +25,14 @@ export default class LandingPage extends Component {
           <Segment
             inverted
             textAlign='center'
+            style={{ height: 500, padding: '1em 0em' }}
+            vertical
+          >
+          <Image src='barbershop1.jpg' fluid style={{ height: 500}}/>
+          </Segment>
+          <Segment
+            inverted
+            textAlign='center'
             style={{ minHeight: 700, padding: '1em 0em' }}
             vertical
           >
