@@ -33,7 +33,7 @@ const AboutUs = () => (
               Tuesday - Saturday: 8:00am - 5pm
 
               <br />
-              574.309.7431
+              574.318.6130
               <br />
             </p>
           </Grid.Column>

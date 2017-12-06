@@ -29536,7 +29536,7 @@ var AboutUs = function AboutUs() {
               _react2.default.createElement('br', null),
               'Tuesday - Saturday: 8:00am - 5pm',
               _react2.default.createElement('br', null),
-              '574.309.7431',
+              '574.318.6130',
               _react2.default.createElement('br', null)
             )
           ),
@@ -29890,6 +29890,12 @@ var _react2 = _interopRequireDefault(_react);
 
 var _semanticUiReact = __webpack_require__(57);
 
+var _reactRedux = __webpack_require__(40);
+
+var _history = __webpack_require__(233);
+
+var _history2 = _interopRequireDefault(_history);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -29902,20 +29908,23 @@ var LandingPage = function (_Component) {
   _inherits(LandingPage, _Component);
 
   function LandingPage() {
-    var _ref;
-
-    var _temp, _this, _ret;
-
     _classCallCheck(this, LandingPage);
 
-    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
+    var _this = _possibleConstructorReturn(this, (LandingPage.__proto__ || Object.getPrototypeOf(LandingPage)).call(this));
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = LandingPage.__proto__ || Object.getPrototypeOf(LandingPage)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _temp), _possibleConstructorReturn(_this, _ret);
+    _this.state = {};
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
   }
 
   _createClass(LandingPage, [{
+    key: 'handleClick',
+    value: function handleClick() {
+
+      this.props.isLoggedIn ? _history2.default.push('/booking') : _history2.default.push('/login');
+    }
+  }, {
     key: 'render',
     value: function render() {
 
@@ -29927,27 +29936,27 @@ var LandingPage = function (_Component) {
           {
             inverted: true,
             textAlign: 'center',
-            style: { height: 500, padding: '1em 0em' },
+            style: { height: 300, padding: '1em 0em' },
             vertical: true
           },
-          _react2.default.createElement(_semanticUiReact.Image, { src: 'barbershop1.jpg', fluid: true, style: { height: 500 } })
+          _react2.default.createElement(_semanticUiReact.Image, { src: 'barbershop1.jpg', fluid: true, style: { height: 300 } })
         ),
         _react2.default.createElement(
           _semanticUiReact.Segment,
           {
             inverted: true,
             textAlign: 'center',
-            style: { minHeight: 700, padding: '1em 0em' },
+            style: { minHeight: 300, padding: '1em 0em' },
             vertical: true
           },
           _react2.default.createElement(
             _semanticUiReact.Container,
-            { text: true },
+            { text: true, style: { marginBottom: '3.5em' } },
             _react2.default.createElement(_semanticUiReact.Header, {
               as: 'h1',
               content: 'Look your best!',
               inverted: true,
-              style: { fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '3em' }
+              style: { fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '1em' }
             }),
             _react2.default.createElement(_semanticUiReact.Header, {
               as: 'h2',
@@ -29957,7 +29966,7 @@ var LandingPage = function (_Component) {
             }),
             _react2.default.createElement(
               _semanticUiReact.Button,
-              { primary: true, size: 'huge' },
+              { onClick: this.handleClick, primary: true, size: 'huge' },
               'Get Started',
               _react2.default.createElement(_semanticUiReact.Icon, { name: 'right arrow' })
             )
@@ -29965,7 +29974,66 @@ var LandingPage = function (_Component) {
         ),
         _react2.default.createElement(
           _semanticUiReact.Segment,
-          { style: { padding: '0em' }, vertical: true },
+          { style: { padding: '8em 0em', backgroundColor: 'white' }, vertical: true },
+          _react2.default.createElement(
+            _semanticUiReact.Grid,
+            { container: true, stackable: true, verticalAlign: 'middle' },
+            _react2.default.createElement(
+              _semanticUiReact.Grid.Row,
+              null,
+              _react2.default.createElement(
+                _semanticUiReact.Grid.Column,
+                { width: 8 },
+                _react2.default.createElement(
+                  _semanticUiReact.Header,
+                  { as: 'h3', style: { fontSize: '2em' } },
+                  'We offer mobile haircuts!'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { style: { fontSize: '1.33em' } },
+                  'Don\'t feel like leaving the house? Only have 30 minutes for your lunch break? Book a mobile appointment today!!'
+                ),
+                _react2.default.createElement(
+                  _semanticUiReact.Header,
+                  { as: 'h3', style: { fontSize: '2em' } },
+                  'We also do groups and events!!'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  { style: { fontSize: '1.33em' } },
+                  'Is the family going on vacation? Don\'t trust all your groomsman to come looking clean on the big day? Call us to talk about our affordable group and event pricing!'
+                )
+              ),
+              _react2.default.createElement(
+                _semanticUiReact.Grid.Column,
+                { floated: 'right', width: 6 },
+                _react2.default.createElement(_semanticUiReact.Image, {
+                  bordered: true,
+                  rounded: true,
+                  size: 'large',
+                  src: '/wedding.jpg'
+                })
+              )
+            ),
+            _react2.default.createElement(
+              _semanticUiReact.Grid.Row,
+              null,
+              _react2.default.createElement(
+                _semanticUiReact.Grid.Column,
+                { textAlign: 'center' },
+                _react2.default.createElement(
+                  _semanticUiReact.Button,
+                  { onClick: this.handleClick, size: 'huge' },
+                  'Check Us Out'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          _semanticUiReact.Segment,
+          { style: { padding: '0em', backgroundColor: 'gray' }, vertical: true },
           _react2.default.createElement(
             _semanticUiReact.Grid,
             { celled: 'internally', columns: 'equal', stackable: true },
@@ -30010,7 +30078,27 @@ var LandingPage = function (_Component) {
   return LandingPage;
 }(_react.Component);
 
-exports.default = LandingPage;
+var mapState = function mapState(state, ownProps) {
+  // const { reviews } = state
+
+  return {
+    // reviews,
+    isLoggedIn: !!state.user.id,
+    userId: state.user.id
+  };
+};
+
+var mapDispatch = function mapDispatch(dispatch) {
+  return {
+    // loadReviews: () => {
+    //   dispatch(fetchReviews())
+    // },
+    // deleteReview: (reviewId) => {
+    //   dispatch(removeReview(reviewId))
+    // },
+  };
+};
+exports.default = (0, _reactRedux.connect)(mapState, mapDispatch)(LandingPage);
 
 /***/ }),
 /* 478 */
