@@ -41,10 +41,10 @@ this.handleClick = this.handleClick.bind(this);
           <Segment
             inverted
             textAlign="center"
-            style={{ height: 300, padding: '1em 0em' }}
+            style={{ height: 500, padding: '1em 0em' }}
             vertical
           >
-          <Image src="barbershop1.jpg" fluid style={{ height: 300}} />
+          <Image src="barbershop1.jpg" fluid style={{ height: 500}} />
           </Segment>
           <Segment
             inverted

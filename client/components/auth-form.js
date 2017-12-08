@@ -17,15 +17,15 @@ const AuthForm = (props) => {
     <div className="login-form">
       <Grid
         textAlign="center"
-        style={{ height: '450px' }}
+        style={{ height: '-webkit-fill-available' }}
         verticalAlign="middle"
       >
-        <Grid.Column style={{ maxWidth: 450 }}>
-          <Header as="h2" color="green" textAlign="center">
-            {displayName}
+        <Grid.Column style={{ height: '125vh' }}>
+          <Header as="h2" color="blue" textAlign="center">
+            Please {displayName}
           </Header>
           <Form onSubmit={evt => handleSubmit(name, evt)} name={name} size="large">
-            <Segment stacked style={{ height: '225px' }}>
+            <Segment stacked style={{ height: '225px', width: '325px' }}>
             <Form.Group>
               <Form.Input
                 fluid
@@ -48,15 +48,11 @@ const AuthForm = (props) => {
                 width={14}
               />
 </Form.Group>
-              <Button color="green" fluid size="large">
+              <Button color="blue" fluid size="large">
                 {displayName}
               </Button>
               <Message href="/auth/google" style={{ top: '24px' }}>
                 <Icon name="google" size="large" />Google {displayName}
-
-              </Message>
-              <Message href="auth/facebook" style={{ top: '24px' }}>
-                <Icon name="facebook square" size="large" />Facebook {displayName}
 
               </Message>
             </Segment>
