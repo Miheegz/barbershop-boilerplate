@@ -44,7 +44,7 @@ this.handleClick = this.handleClick.bind(this);
             style={{ height: 500, padding: '1em 0em' }}
             vertical
           >
-          <Image src="barbershop1.jpg" fluid style={{ height: 500}} />
+          <Image src="reesecuts.jpg" fluid style={{ height: 500}} />
           </Segment>
           <Segment
             inverted

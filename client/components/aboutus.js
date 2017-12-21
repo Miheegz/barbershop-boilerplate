@@ -28,9 +28,9 @@ const AboutUs = () => (
             </Header>
             <p style={{ fontSize: '1.33em' }}>
               <h3>South Bend</h3>
-              3228 grape road Mishawaka, IN 46545
+              519 East Mishawaka Ave, Mishawaka IN 46545
               <br />
-              Tuesday - Saturday: 8:00am - 5pm
+              Tuesday - Saturday: 10am - 7pm
 
               <br />
               574.318.6130

@@ -29532,9 +29532,9 @@ var AboutUs = function AboutUs() {
                 null,
                 'South Bend'
               ),
-              '3228 grape road Mishawaka, IN 46545',
+              '519 East Mishawaka Ave, Mishawaka IN 46545',
               _react2.default.createElement('br', null),
-              'Tuesday - Saturday: 8:00am - 5pm',
+              'Tuesday - Saturday: 10am - 7pm',
               _react2.default.createElement('br', null),
               '574.318.6130',
               _react2.default.createElement('br', null)
@@ -29933,7 +29933,7 @@ var LandingPage = function (_Component) {
             style: { height: 500, padding: '1em 0em' },
             vertical: true
           },
-          _react2.default.createElement(_semanticUiReact.Image, { src: 'barbershop1.jpg', fluid: true, style: { height: 500 } })
+          _react2.default.createElement(_semanticUiReact.Image, { src: 'reesecuts.jpg', fluid: true, style: { height: 500 } })
         ),
         _react2.default.createElement(
           _semanticUiReact.Segment,
