@@ -29930,10 +29930,10 @@ var LandingPage = function (_Component) {
           {
             inverted: true,
             textAlign: 'center',
-            style: { height: 500, padding: '1em 0em' },
+            style: { height: 500, padding: '0em 0em' },
             vertical: true
           },
-          _react2.default.createElement(_semanticUiReact.Image, { src: 'reesecuts.jpg', fluid: true, style: { height: 500 } })
+          _react2.default.createElement(_semanticUiReact.Image, { src: 'reesecuts.jpg', fluid: true, style: { height: 500, marginTop: '-.5em' } })
         ),
         _react2.default.createElement(
           _semanticUiReact.Segment,
@@ -30141,7 +30141,6 @@ var Main = function Main(props) {
     'div',
     { style: { backgroundColor: 'gray', height: '150vh' } },
     _react2.default.createElement(_navbar2.default, null),
-    _react2.default.createElement('hr', null),
     children
   );
 };

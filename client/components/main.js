@@ -18,7 +18,7 @@ const Main = (props) => {
     <div style={{  backgroundColor: 'gray', height: '150vh' }}>
       <Navbar />
 
-      <hr />
+
       {children}
     </div>
   )
