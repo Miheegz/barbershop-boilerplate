@@ -7,11 +7,13 @@ import {
   Segment,
   Divider,
   Dropdown,
+  Header,
+  Image
 } from 'semantic-ui-react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { logout } from '../store/user'
-
+import '../_logo.scss'
 
 const Navbar = (props) => {
   const {
@@ -23,9 +25,17 @@ const Navbar = (props) => {
     <Segment
       inverted
       textAlign="center"
-      style={{ padding: '0em 0em' }}
+      style={{ padding: '0em 0em', marginBottom: '-.8em' }}
       vertical
+
     >
+    <Header inverted as="h1" color="white" className="logo" floated="left" style={{ marginTop: '0em'}}>
+
+    <Image src="Barberpole.png" size="small" color= "white" circular className="heartbeat" />
+
+    Reese Cutts
+    </Header>
+
       <Container>
         <Menu inverted pointing secondary size="large">
           <Menu.Item as={Link} to="/"><Icon name="home" />Home</Menu.Item>

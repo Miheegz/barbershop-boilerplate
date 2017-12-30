@@ -29942,27 +29942,71 @@ var LandingPage = function (_Component) {
             textAlign: 'center',
             style: { minHeight: 300, padding: '1em 0em' },
             vertical: true
+
           },
           _react2.default.createElement(
             _semanticUiReact.Container,
-            { text: true, style: { marginBottom: '3.5em' } },
-            _react2.default.createElement(_semanticUiReact.Header, {
-              as: 'h1',
-              content: 'Look your best!',
-              inverted: true,
-              style: { fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '1em' }
-            }),
-            _react2.default.createElement(_semanticUiReact.Header, {
-              as: 'h2',
-              content: 'Walk-in looking nappy walk-out looking Fresh! Book your appointment now.',
-              inverted: true,
-              style: { fontSize: '1.7em', fontWeight: 'normal' }
-            }),
+            { text: true, style: { marginBottom: '3.5em' }, id: 'videoCon' },
             _react2.default.createElement(
-              _semanticUiReact.Button,
-              { onClick: this.handleClick, primary: true, size: 'huge' },
-              'Get Started',
-              _react2.default.createElement(_semanticUiReact.Icon, { name: 'right arrow' })
+              _semanticUiReact.Grid,
+              { container: true, stackable: true, verticalAlign: 'middle', textAlign: 'center' },
+              _react2.default.createElement(
+                _semanticUiReact.Grid.Row,
+                null,
+                _react2.default.createElement(_semanticUiReact.Header, {
+                  as: 'h1',
+                  content: 'Look your best!',
+                  inverted: true,
+                  textAlign: 'center',
+                  style: { fontSize: '4em', fontWeight: 'normal' }
+                })
+              ),
+              _react2.default.createElement(
+                _semanticUiReact.Grid.Row,
+                { id: 'grid' },
+                _react2.default.createElement(
+                  _semanticUiReact.Grid.Column,
+                  { id: 'videoSegment', textAlign: 'center' },
+                  _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                      'video',
+                      { preload: true, id: 'video', autoPlay: true, loop: true },
+                      _react2.default.createElement('source', { src: 'video.mp4', type: 'video/mp4' })
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                _semanticUiReact.Grid.Row,
+                null,
+                _react2.default.createElement(
+                  _semanticUiReact.Grid.Column,
+                  { textAlign: 'center' },
+                  _react2.default.createElement(_semanticUiReact.Header, {
+                    as: 'h2',
+                    content: 'Walk-in looking nappy walk-out looking Fresh! Book your appointment now.',
+                    inverted: true,
+                    textAlign: 'center',
+                    style: { fontSize: '1.7em', fontWeight: 'normal' }
+                  })
+                )
+              ),
+              _react2.default.createElement(
+                _semanticUiReact.Grid.Row,
+                null,
+                _react2.default.createElement(
+                  _semanticUiReact.Grid.Column,
+                  { textAlign: 'center' },
+                  _react2.default.createElement(
+                    _semanticUiReact.Button,
+                    { onClick: this.handleClick, primary: true, size: 'huge' },
+                    'Get Started',
+                    _react2.default.createElement(_semanticUiReact.Icon, { name: 'right arrow' })
+                  )
+                )
+              )
             )
           )
         ),
@@ -30001,7 +30045,7 @@ var LandingPage = function (_Component) {
               ),
               _react2.default.createElement(
                 _semanticUiReact.Grid.Column,
-                { floated: 'right', width: 6 },
+                { floated: 'right', width: 5 },
                 _react2.default.createElement(_semanticUiReact.Image, {
                   bordered: true,
                   rounded: true,
@@ -30199,6 +30243,8 @@ var _reactRouterDom = __webpack_require__(194);
 
 var _user = __webpack_require__(234);
 
+__webpack_require__(896);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Navbar = function Navbar(props) {
@@ -30213,9 +30259,16 @@ var Navbar = function Navbar(props) {
     {
       inverted: true,
       textAlign: 'center',
-      style: { padding: '0em 0em' },
+      style: { padding: '0em 0em', marginBottom: '-.8em' },
       vertical: true
+
     },
+    _react2.default.createElement(
+      _semanticUiReact.Header,
+      { inverted: true, as: 'h1', color: 'white', className: 'logo', floated: 'left', style: { marginTop: '0em' } },
+      _react2.default.createElement(_semanticUiReact.Image, { src: 'Barberpole.png', size: 'small', color: 'white', circular: true, className: 'heartbeat' }),
+      'Reese Cutts'
+    ),
     _react2.default.createElement(
       _semanticUiReact.Container,
       null,
@@ -31964,7 +32017,7 @@ exports = module.exports = __webpack_require__(543)();
 
 
 // module
-exports.push([module.i, "body {\n  font-family: sans-serif; }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n  body .login-form > body > div,\n  body .login-form > body > div > div,\n  body .login-form > body > div > div > div.login-form {\n    height: 100%; }\n  body .login-form,\n  body .backgroundcolor {\n    background-color: #1b1c1d; }\n  body h3, body h3, body h4 {\n    font-family: 'Permanent Marker', cursive !important; }\n", ""]);
+exports.push([module.i, "body {\n  font-family: sans-serif; }\n  body a {\n    text-decoration: none; }\n  body label {\n    display: block; }\n  body nav a {\n    display: inline-block;\n    margin: 1em; }\n  body form div {\n    margin: 1em;\n    display: inline-block; }\n  body .login-form > body > div,\n  body .login-form > body > div > div,\n  body .login-form > body > div > div > div.login-form {\n    height: 100%; }\n  body .login-form,\n  body .backgroundcolor {\n    background-color: #1b1c1d; }\n  body h3, body h3, body h4, body .logo {\n    font-family: 'Permanent Marker', cursive !important; }\n", ""]);
 
 // exports
 
@@ -75309,6 +75362,46 @@ function toArray(list, index) {
 /***/ (function(module, exports) {
 
 /* (ignored) */
+
+/***/ }),
+/* 895 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(543)();
+// imports
+
+
+// module
+exports.push([module.i, ".heartbeat {\n  -webkit-animation: heartbeat .5s ease-in-out infinite both;\n  animation: heartbeat .5s ease-in-out infinite both; }\n\n/* ----------------------------------------------\n * Generated by Animista on 2017-11-29 12:44:47\n * w: http://animista.net, t: @cssanimista\n * ---------------------------------------------- */\n/**\n * ----------------------------------------\n * animation heartbeat\n * ----------------------------------------\n */\n@-webkit-keyframes heartbeat {\n  from {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n    -webkit-transform-origin: center center;\n    transform-origin: center center;\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  10% {\n    -webkit-transform: scale(0.91);\n    transform: scale(0.91);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  17% {\n    -webkit-transform: scale(0.98);\n    transform: scale(0.98);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  33% {\n    -webkit-transform: scale(0.87);\n    transform: scale(0.87);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  45% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; } }\n\n@keyframes heartbeat {\n  from {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n    -webkit-transform-origin: center center;\n    transform-origin: center center;\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  10% {\n    -webkit-transform: scale(0.91);\n    transform: scale(0.91);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  17% {\n    -webkit-transform: scale(0.98);\n    transform: scale(0.98);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; }\n  33% {\n    -webkit-transform: scale(0.87);\n    transform: scale(0.87);\n    -webkit-animation-timing-function: ease-in;\n    animation-timing-function: ease-in; }\n  45% {\n    -webkit-transform: scale(1);\n    transform: scale(1);\n    -webkit-animation-timing-function: ease-out;\n    animation-timing-function: ease-out; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 896 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(895);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(889)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./_logo.scss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./_logo.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

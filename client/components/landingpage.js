@@ -51,26 +51,56 @@ this.handleClick = this.handleClick.bind(this);
             textAlign="center"
             style={{ minHeight: 300, padding: '1em 0em' }}
             vertical
+
           >
 
 
-            <Container text style={{ marginBottom: '3.5em' }}>
-              <Header
-                as="h1"
-                content="Look your best!"
-                inverted
-                style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '1em' }}
-              />
+            <Container text style={{ marginBottom: '3.5em' }} id="videoCon">
+            <Grid container stackable verticalAlign="middle" textAlign="center">
+            <Grid.Row>
+            <Header
+            as="h1"
+            content="Look your best!"
+            inverted
+            textAlign="center"
+            style={{ fontSize: '4em', fontWeight: 'normal' }}
+          />
+
+            </Grid.Row>
+            <Grid.Row id="grid" >
+            <Grid.Column id="videoSegment" textAlign="center">
+            <div>
+            <video preload id="video" autoPlay loop >
+            <source src="video.mp4" type="video/mp4" />
+            </video>
+            </div>
+
+
+
+
+            </Grid.Column>
+</Grid.Row>
+<Grid.Row>
+            <Grid.Column  textAlign="center"  >
+
               <Header
                 as="h2"
                 content="Walk-in looking nappy walk-out looking Fresh! Book your appointment now."
                 inverted
+                textAlign="center"
                 style={{ fontSize: '1.7em', fontWeight: 'normal' }}
               />
+              </Grid.Column>
+              </Grid.Row>
+              <Grid.Row>
+              <Grid.Column textAlign="center">
               <Button onClick={this.handleClick} primary size="huge">
                 Get Started
                 <Icon name="right arrow" />
               </Button>
+              </Grid.Column>
+              </Grid.Row>
+            </Grid>
             </Container>
           </Segment>
 
@@ -87,7 +117,7 @@ this.handleClick = this.handleClick.bind(this);
                   Is the family going on vacation? Don't trust all your groomsman to come looking clean on the big day? Call us to talk about our affordable group and event pricing!
                 </p>
               </Grid.Column>
-              <Grid.Column floated="right" width={6}>
+              <Grid.Column floated="right" width={5} >
                 <Image
                   bordered
                   rounded
