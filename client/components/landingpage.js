@@ -49,7 +49,7 @@ this.handleClick = this.handleClick.bind(this);
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 300, padding: '1em 0em' }}
+            style={{ minHeight: 300, padding: '2em 0em' }}
             vertical
 
           >
@@ -62,6 +62,7 @@ this.handleClick = this.handleClick.bind(this);
             as="h1"
             content="Look your best!"
             inverted
+            id="header"
             textAlign="center"
             style={{ fontSize: '4em', fontWeight: 'normal' }}
           />

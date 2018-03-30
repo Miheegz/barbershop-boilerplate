@@ -14,13 +14,16 @@ const AuthForm = (props) => {
 
   return (
 
-    <div className="login-form">
+    <div
+className="login-form" style={{ display: 'flex',
+    width: '-webkit-fill-available', justifyContent: 'center' }}>
       <Grid
         textAlign="center"
         style={{ height: '-webkit-fill-available' }}
         verticalAlign="middle"
+        centered
       >
-        <Grid.Column style={{ height: '125vh' }}>
+        <Grid.Column style={{ height: '125vh' }} textAlign="center" >
           <Header as="h2" color="blue" textAlign="center">
             Please {displayName}
           </Header>
