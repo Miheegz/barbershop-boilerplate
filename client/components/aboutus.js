@@ -5,7 +5,7 @@ import { Grid, Header, Image, Segment } from 'semantic-ui-react';
 const AboutUs = () => (
   <div>
   <Header
-  as='h1'
+  as='h2'
   content='ABOUT US'
   inverted
   style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop: '3em', textAlign: 'center', color: 'black' }}
