@@ -15,7 +15,7 @@ const AboutUs = () => (
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as="h3" style={{ fontSize: '2em' }}>
-              Who We Are
+              Who We Are!
             </Header>
             <p style={{ fontSize: '1.33em' }}>
               I have been cutting hair since ....
