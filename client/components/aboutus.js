@@ -30,7 +30,7 @@ const AboutUs = () => (
               <h3>South Bend</h3>
               519 East Mishawaka Ave, Mishawaka IN 46545
               <br />
-              Tuesday - Saturday: 10am - 7pm
+             Call for hours
 
               <br />
               574.318.6130
